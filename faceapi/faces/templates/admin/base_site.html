@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+
+{% block extrahead %}
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+{% endblock %}
+
+{% block branding %}
+<h1 class="text-3xl font-bold text-blue-600">Face Registry Admin</h1>
+{% endblock %}
+
+{% block nav-global %}
+<div class="p-2 bg-gray-100 rounded-md shadow mb-3">
+    <p class="text-sm text-gray-600">
+        Manage People, Departments & Face Encodings
+    </p>
+</div>
+{% endblock %}
