@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCRWR Water Test Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Print settings to ensure A4 sizing and hide web elements */
+        @media print {
+            body { 
+                background-color: white; 
+                margin: 0;
+                padding: 0;
+            }
+            .page-shadow { 
+                box-shadow: none !important; 
+                margin: 0 !important;
+                width: 100% !important;
+                max-width: none !important;
+            }
+            .no-print { display: none; }
+        }
+        
+        /* Force background colors to print */
+        body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        
+        /* Custom Table Styling for dense data */
+        td, th {
+            padding: 4px 6px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8 font-sans text-xs text-gray-900">
+
+    <div class="[210mm] mx-auto bg-white p-[10mm] min-h-[297mm] shadow-lg page-shadow relative flex flex-col">
+
+        <header class="border-b-2 border-gray-800 pb-2 mb-4 bg-gray-200">
+            <div class="flex justify-between items-center mb-2">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="pcrwr.png" alt="PCRWR Logo" class="w-20 h-20 object-contain rounded-full">
+                </div>
+
+                <div class="text-center flex-1 px-2">
+                    <h1 class="text-lg font-bold uppercase text-blue-900 leading-tight">Pakistan Council of Research in Water Resources</h1>
+                    <p class="font-semibold text-gray-700">Ministry of Water Resources, Government of Pakistan</p>
+                    <p class="text-xs">Khayban-e-Johar, H-8/1, Islamabad</p>
+                    <p class="text-blue-600 underline text-xs">www.pcrwr.gov.pk</p>
+                    
+                    <div class="mt-3 inline-block border-t border-b border-gray-600 py-1 px-4">
+                        <h2 class="text-xl font-bold uppercase tracking-wide">Test Report Chemical & Microbiology</h2>
+                    </div>
+                </div>
+
+                <div class="w-20 h-20 flex items-center justify-center bg-gray-200">
+                    <img src="pnac.jpg" alt="NWQL Logo" class="w-full h-full object-contain rounded-full">
+            
+                  </div>
+                  
+            </div>
+        </header>
+
+        <div class="mb-4">
+            <table class="w-full border-collapse border border-gray-400 text-[11px]">
+                <tbody>
+                    <tr>
+                        <td class="border border-gray-400 bg-gray-100 font-bold w-[20%]">Report Serial No</td>
+                        <td class="border border-gray-400 w-[30%]">AR-06442</td>
+                        <td class="border border-gray-400 bg-gray-100 font-bold w-[20%]">Total No of Pages</td>
+                        <td class="border border-gray-400 w-[30%]">2</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">Customer Name & Address</td>
+                        <td class="border border-gray-400" colspan="3">Natural cool Sip NCS, Muree Express Way, Darbar stop Manga, Near Gulf City.</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">Sampling Date & Time</td>
+                        <td class="border border-gray-400">25-09-2024, 09:00 AM</td>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">Customer Code</td>
+                        <td class="border border-gray-400">Bottled Water</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">NWQL Sample Code</td>
+                        <td class="border border-gray-400">MCL-14528-24</td>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">Sample Receipt Date</td>
+                        <td class="border border-gray-400">26-09-2024 09:09</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">Temp. at receipt °C</td>
+                        <td class="border border-gray-400">19 High</td>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">Humidity (%)</td>
+                        <td class="border border-gray-400">52</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">Date(s) of Analysis</td>
+                        <td class="border border-gray-400">26-09-2024 to 09-10-2024</td>
+                        <td class="border border-gray-400 bg-gray-100 font-bold">Reporting Date</td>
+                        <td class="border border-gray-400">9-10-2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="font-bold text-xs mb-1 uppercase bg-gray-200 p-1 border border-gray-400 pl-2">Physical & Aesthetic Parameters</h3>
+        <table class="w-full border-collapse border border-gray-400 mb-4 text-center text-[10px]">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="border border-gray-400 w-8">Sr.#</th>
+                    <th class="border border-gray-400 text-left">Parameter</th>
+                    <th class="border border-gray-400">Units</th>
+                    <th class="border border-gray-400">Det. Limit</th>
+                    <th class="border border-gray-400">Ref. Method</th>
+                    <th class="border border-gray-400">Permissible Limits</th>
+                    <th class="border border-gray-400 font-bold">Results</th>
+                    <th class="border border-gray-400">Uncertainty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-400">1</td>
+                    <td class="border border-gray-400 text-left">Color*</td>
+                    <td class="border border-gray-400">-</td>
+                    <td class="border border-gray-400">-</td>
+                    <td class="border border-gray-400">Sensory Evaluation</td>
+                    <td class="border border-gray-400">Colorless</td>
+                    <td class="border border-gray-400">Colorless</td>
+                    <td class="border border-gray-400">-</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">2</td>
+                    <td class="border border-gray-400 text-left">Electrical Conductivity</td>
+                    <td class="border border-gray-400">µS/cm</td>
+                    <td class="border border-gray-400">0.11</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">481.00</td>
+                    <td class="border border-gray-400">±4%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">3</td>
+                    <td class="border border-gray-400 text-left">pH</td>
+                    <td class="border border-gray-400">-</td>
+                    <td class="border border-gray-400">0.03</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">6.5-8.5</td>
+                    <td class="border border-gray-400">6.89</td>
+                    <td class="border border-gray-400">±5%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">4</td>
+                    <td class="border border-gray-400 text-left">Turbidity</td>
+                    <td class="border border-gray-400">NTU</td>
+                    <td class="border border-gray-400">0.31</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">&lt;5</td>
+                    <td class="border border-gray-400">BDL</td>
+                    <td class="border border-gray-400">-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="font-bold text-xs mb-1 uppercase bg-gray-200 p-1 border border-gray-400 pl-2">Major Chemical Parameters</h3>
+        <table class="w-full border-collapse border border-gray-400 mb-4 text-center text-[10px]">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="border border-gray-400 w-8">Sr.#</th>
+                    <th class="border border-gray-400 text-left">Parameter</th>
+                    <th class="border border-gray-400">Units</th>
+                    <th class="border border-gray-400">Det. Limit</th>
+                    <th class="border border-gray-400">Ref. Method</th>
+                    <th class="border border-gray-400">Permissible Limits</th>
+                    <th class="border border-gray-400 font-bold">Results</th>
+                    <th class="border border-gray-400">Uncertainty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-400">5</td>
+                    <td class="border border-gray-400 text-left">Alkalinity as CaCO<sub>3</sub>*</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">5</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">197.00</td>
+                    <td class="border border-gray-400">±6%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">6</td>
+                    <td class="border border-gray-400 text-left">Bicarbonates*</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">5.0</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">197.00</td>
+                    <td class="border border-gray-400">±6%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">7</td>
+                    <td class="border border-gray-400 text-left">Calcium</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">2.0</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">41.00</td>
+                    <td class="border border-gray-400">7%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">8</td>
+                    <td class="border border-gray-400 text-left">Carbonates*</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">5.0</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">BDL</td>
+                    <td class="border border-gray-400">-</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">9</td>
+                    <td class="border border-gray-400 text-left">Chlorides*</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">2.0</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">&lt;250</td>
+                    <td class="border border-gray-400">20.00</td>
+                    <td class="border border-gray-400">±5%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">10</td>
+                    <td class="border border-gray-400 text-left">Total Hardness</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">5.0</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">&lt;500</td>
+                    <td class="border border-gray-400">202.00</td>
+                    <td class="border border-gray-400">8%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">11</td>
+                    <td class="border border-gray-400 text-left">Magnesium</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">1.0</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">24</td>
+                    <td class="border border-gray-400">±6%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">12</td>
+                    <td class="border border-gray-400 text-left">Potassium</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">0.02</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">1.20</td>
+                    <td class="border border-gray-400">±5%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">13</td>
+                    <td class="border border-gray-400 text-left">Sodium</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">1.57</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">31.00</td>
+                    <td class="border border-gray-400">±5%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">14</td>
+                    <td class="border border-gray-400 text-left">Sulphate</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">0.28</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">NGVS</td>
+                    <td class="border border-gray-400">26.00</td>
+                    <td class="border border-gray-400">±5%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">15</td>
+                    <td class="border border-gray-400 text-left">Nitrate (N)</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">0.06</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">&lt;10</td>
+                    <td class="border border-gray-400">0.24</td>
+                    <td class="border border-gray-400">±5%</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400">16</td>
+                    <td class="border border-gray-400 text-left">TDS*</td>
+                    <td class="border border-gray-400">mg/L</td>
+                    <td class="border border-gray-400">-</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">&lt; 1000</td>
+                    <td class="border border-gray-400">265</td>
+                    <td class="border border-gray-400">-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="font-bold text-xs mb-1 uppercase bg-gray-200 p-1 border border-gray-400 pl-2">Microbiological Parameters</h3>
+        <table class="w-full border-collapse border border-gray-400 mb-4 text-center text-[10px]">
+             <thead>
+                <tr class="bg-gray-100">
+                    <th class="border border-gray-400 w-8">Sr.#</th>
+                    <th class="border border-gray-400 text-left">Parameter</th>
+                    <th class="border border-gray-400">Units</th>
+                    <th class="border border-gray-400">Ref. Method</th>
+                    <th class="border border-gray-400">Permissible Limits</th>
+                    <th class="border border-gray-400 font-bold">Results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-400">17</td>
+                    <td class="border border-gray-400 text-left">Total Coliforms</td>
+                    <td class="border border-gray-400">CFU/100 ml</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">0</td>
+                    <td class="border border-gray-400">-ve</td>
+                </tr>
+                 <tr>
+                    <td class="border border-gray-400">18</td>
+                    <td class="border border-gray-400 text-left">Fecal Coliforms</td>
+                    <td class="border border-gray-400">CFU/100 ml</td>
+                    <td class="border border-gray-400">APHA, 24th Ed</td>
+                    <td class="border border-gray-400">0</td>
+                    <td class="border border-gray-400">-ve</td>
+                </tr>
+                 <tr>
+                    <td class="border border-gray-400">19</td>
+                    <td class="border border-gray-400 text-left">E-coli</td>
+                    <td class="border border-gray-400">CFU/100 ml</td>
+                    <td class="border border-gray-400">USEPA-1603</td>
+                    <td class="border border-gray-400">0</td>
+                    <td class="border border-gray-400">-ve</td>
+                </tr>
+            </tbody>
+        </table>
+   <div class="mt-8 text-sm space-y-1">
+            <div class="flex flex-wrap">
+                <div class="w-1/2">
+                    <p><strong>NGVS:</strong> No Guideline Value Set</p>
+                    <p><strong>WHO:</strong> World Health Organization</p>
+                    <p><strong>MPN:</strong> Most Probable Number</p>
+                    <p><strong>PSQCA:</strong> Pakistan Standard Quality Control Authority</p>
+                    <p><strong>NSDWQ:</strong> National Standards for Drinking Water Quality</p>
+                    <p><strong>BDL:</strong> Below Detection Limit</p>
+                    <p><strong>MPN:</strong> Most Probable Number</p>
+                    <p><strong>**</strong>It is equals to zero and it is reported as safe</p>
+                </div>
+                <div class="w-1/2">
+                    <p><strong>APHA:</strong> American Public Health Association,</p>
+                    <p><strong>FAO:</strong> Food & Agriculture Organization</p>
+                    <p><strong>USEPA:</strong> United States Environmental Protection Agency</p>
+                    <p><strong>AOAC:</strong> Association of Official Analytical Chemists</p>
+                    <p><strong>CFU:</strong> Colony Forming Unit</p>
+                    <p><strong>QC:</strong> Quality control</p>
+                    <p><strong>*</strong>Non Accreditated</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-8 text-lg font-bold underline underline-offset-2">Interpretation (Statement of Conformity)</h2>
+        <div class="overflow-x-auto mt-4">
+            <table class="w-full border-collapse text-sm">
+                <tbody>
+                    <tr>
+                        <td class="border border-[#CCCCCC] p-2 w-3/4">Quality of water sample based on tested chemical
+                            parameter</td>
+                        <td class="border border-[#CCCCCC] p-2 w-1/8 text-center text-lg"><strong>✓
+                                Safe</strong></td>
+                        <td class="border border-[#CCCCCC] p-2 w-1/8 text-center">Unsafe</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-[#CCCCCC] p-2 w-3/4">Quality of water sample based on tested microbial
+                            parameter</td>
+                        <td class="border border-[#CCCCCC] p-2 w-1/8 text-center text-lg"><strong>✓
+                                Safe</strong></td>
+                        <td class="border border-[#CCCCCC] p-2 w-1/8 text-center">Unsafe</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-[#CCCCCC] p-2 w-3/4 font-bold">Remarks (if any)</td>
+                        <td class="border border-[#CCCCCC] p-2" colspan="2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="p-5 pb-0">* Verified by technical manager & authorized by QC manager.</p>
+        <div class="pl-5">
+            <h2 class="mt-8 text-lg font-bold underline underline-offset-2">Terms & Conditions</h2>
+            <ul class="list-disc pl-6 text-sm mt-3 space-y-1">
+                <li>Test results in this report relate only to the test item/sample submitted and tested.</li>
+                <li>The test report shall not be reproduced except in full, without written approval of NWQL-PCRWR</li>
+                <li>Water Quality Parameters exceeding the WHO Drinking Water Guideline values (Guidelines for
+                    Drinking-Water Quality, third editions, 2004) National Environmental Quality Standards (1999) and
+                    Pakistan Standard Quality Control Authority/National Standard for Drinking Water Quality (NSDWQ,
+                    2010,
+                    PAKEPA) are highlighted.</li>
+                <li>Safe - acceptance based on guard band; if the measurement result being below the acceptance limit,
+                    AL =
+                    TL - w, the risk of accepted items to be outside the tolerance limit is < 2.5%.</li>
+                <li>Unsafe - rejection based on guard band; if the measurement result is above the acceptance limit, AL
+                    =
+                    TL - w, the risk to be inside the tolerance limit is < 2.5%.(ILAC-G8:09/2019).</li>
+            </ul>
+        </div>
+        <div class="w-[70%] text-center mx-auto pl-5 pt-3">
+            <p class="text-sm leading-relaxed">
+                <b>Doc ID:</b> NWQL/LMS/TR-11 | <b>Revision No.</b> : 20 | <b>Initiated by:</b> QC | <b>Reviewed by:</b>
+                QM<br>
+                <b>Approved by:</b> Director NWQL | <b></b>Issued by:</b> DQM | <b>Issue Date:</b> 08-01-2024
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
